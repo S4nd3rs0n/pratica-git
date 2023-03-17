@@ -10,7 +10,10 @@ def main():
     print(valores)
 
     plt.title('Gráfico de linhas')
-    plt.plot(valores)
+    
+    for serie in valores:
+       plt.plot(serie)
+       
     plt.ylabel('Valores de entrada')
     plt.xlabel('Amostragem')
     plt.show()
